@@ -2,9 +2,9 @@ import {Injectable} from '@angular/core';
 import {webSocket} from 'rxjs/webSocket';
 import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
-import { servers } from './_models/configuration';
-import { Categories } from './_models/categories';
-import { SocketData } from './_models/socketData';
+import { SocketData } from '../models/socketData';
+import { servers } from '../models/configuration';
+import { Categories } from '../models/categories';
 
 @Injectable()
 export class HomeProvider {
