@@ -1,0 +1,23 @@
+@import '../../../../assets/styles/navbar.scss';
+.darktext{
+color: black;
+}
+.lighttext{
+  color: #ADD8E6
+
+}
+.darkmode{
+  background-color: #131a25;
+}
+.lightmode{
+  background-color: rgb(255, 255, 255);
+}
+
+i{
+  position: relative;
+  top: 0.2em;
+  right: 0.3em;
+  border-radius: 10%;
+  color: white;
+  background-color:#136884;
+}

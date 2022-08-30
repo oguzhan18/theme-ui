@@ -1,0 +1,59 @@
+<div id="header" [ngClass]="{'darkmode': this.isDarkMode==true, 'lightmode':this.isDarkMode==false}">
+  <div id="banner">
+    <div style="float: left;">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <img class="logo" src="../../../../assets/images/logos/lightlogo.png"
+                title="ASYILDIZ Yetkili Müessese A.Ş." *ngIf="this.isDarkMode == true">
+              <img class="logo" src="../../../../assets/images/logos/darklogo.png"
+                title="ASYILDIZ Yetkili Müessese A.Ş." *ngIf="this.isDarkMode == false">
+            </td>
+            <td id="headercontact">
+              <div>
+                <a class="iconed phone" href="tel:02165744400"[ngClass]="{'darktext': this.isDarkMode==false, 'lighttext':this.isDarkMode==true}">
+             <i  class="material-icons">phone</i>0216 574 44 00 </a>
+                <a class="iconed callus" href="tel:0532 314 89 98"[ngClass]="{'darktext': this.isDarkMode==false, 'lighttext':this.isDarkMode==true}"> <span> <i
+                      class="material-icons">stay_primary_portrait</i>0532 314 89 98 </span> </a>
+                <a class="iconed email" href="mailto:asyildiz@asyildizgrup.com"[ngClass]="{'darktext': this.isDarkMode==false, 'lighttext':this.isDarkMode==true}"> <span> <i
+                      class="material-icons">mail</i> asyildiz@asyildizgrup.com </span> </a>
+                <span style="position: relative; top:0.4em ;"> </span>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="headerright">
+      <table>
+        <tbody>
+          <tr>
+            <td id="bilogo">
+              <img src="../../../../assets/images/logos/borsa-istanbul.png" title="Borsa İstanbul üyesidir">
+              <div style="font-size: small; text-align: right; margin-top: -8px;">üyesidir</div>
+            </td>
+            <td id="dm">
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="darkmode" tabindex="0"
+                  checked="checked" (click)="toggleDarkMode()" [(ngModel)]="isDarkMode">
+                <label class="onoffswitch-label" for="darkmode" style="color: white;">
+                </label>
+              </div>
+
+              <span id="darkmodelabel" *ngIf="this.isDarkMode == true"></span>
+              <span id="lightmodelabel" *ngIf="this.isDarkMode == false"> </span>
+            </td>
+            <td id="clock" style="vertical-align: middle;">
+              <div class="clock2">
+                <span id="dthm">{{now | date:'H:mm':"":"tr-TR"}}</span><span id="dtsec">{{now |
+                  date:'ss':"":"tr-TR"}}</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menubar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+    (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': isCollapsed }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link " href="/">ANA SAYFA</a>
+      </li>
+      <li class="nav-item ">
+        <a lass="nav-link" href="#"> <span style="position:relative; top: 0em;"> CANLI VERİLER <i class="material-icons"
+              style="position:relative; top: 0.3em;">arrow_drop_down</i> </span> </a>
+        <div class="sub-menu">
+          <ul>
+            <li class="nav-item " style="float: left;"> <a class="nav-link" href="#">
+                Canlı Takip Sayfası </a> </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Döviz Ve Pariteler</a> </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Altın Ve Emita</a> </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Endeksler</a> </li>
+          </ul>
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">KURUMSAL</a>
+      </li>
+      <li class="nav-item ">
+        <a lass="nav-link" href="#"> <span style="position:relative; top: 0em;"> KVKK <i class="material-icons"
+              style="position:relative; top: 0.3em;">arrow_drop_down</i> </span> </a>
+        <div class="sub-menu">
+          <ul>
+            <li class="nav-item " style="float: left;"> <a class="nav-link" href="#">
+                Canlı Takip Sayfası </a> </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Döviz Ve Pariteler</a> </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Altın Ve Emita</a> </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Endeksler</a> </li>
+          </ul>
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">İLETİŞİM</a>
+      </li>
+    </ul>
+  </div>
+</nav>
