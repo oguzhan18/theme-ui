@@ -1,0 +1,824 @@
+@media (max-height:1024px) {
+  div.subpage div.ratebox {
+      margin-top: 2em;
+  }
+}
+
+@media (max-height:768px) {
+  #banner img.logo {
+      width: 263px;
+      height: 75px;
+      margin-top: .3em;
+      margin-bottom: .3em;
+  }
+
+  #menubar li {
+      padding-top: .5em;
+      padding-bottom: .5em;
+  }
+
+  div#headerright {
+      margin-top: 14px;
+  }
+
+  .tabview {
+      margin-top: 1em;
+  }
+
+  div.subpage div.ratebox {
+      margin-top: 1em;
+  }
+}
+
+@media (max-height:568px) {
+
+  #header {
+      border-bottom: 1px solid #2e5da6;
+  }
+
+  #banner img.logo {
+      width: 220px;
+      height: 63px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  #mobilemenu {
+      display: table-cell;
+      padding-left: 1em;
+      font-size: 140%;
+  }
+
+  #menubar {
+      display: none;
+      height: 0;
+      overflow: hidden;
+  }
+
+  #header {
+      border-bottom: 1px solid #2e5da6;
+  }
+
+  td#mobilemenu {
+      display: table-cell;
+  }
+
+  td#headercontact a {
+      font-size: .8em;
+      padding: 0 0 0 2em;
+  }
+
+  #menubar > div {
+      display: block;
+      background-color: #191d22;
+  }
+
+  #menubar li {
+      display: block;
+  }
+
+  div#headerright {
+      margin-top: 4px;
+      font-size: 100%;
+  }
+
+  .tabview {
+      margin-top: 0;
+  }
+}
+
+@media (max-width:1919px) {
+  div#mobilead {
+      max-width: 380px;
+  }
+
+      div#mobilead h1 {
+          font-size: 120%;
+      }
+}
+
+@media (max-width: 1720px) {
+  div#mobilead {
+      max-width: 340px;
+  }
+}
+
+@media (max-width:1700px) {
+  div#mobilead {
+      max-width: 262px;
+      font-size: 94%;
+  }
+}
+
+
+@media (min-width:1600px) {
+  #fullscreen {
+      display: table-cell;
+  }
+}
+
+@media (max-width:1580px) {
+  div#mobilead {
+      display: none;
+  }
+}
+
+@media (max-width:1279px) {
+
+  td#headercontact a {
+      font-size: 1em;
+      font-weight: 500;
+  }
+}
+
+@media (max-width:1200px) {
+  #headercontact {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+
+  td#headercontact a {
+      font-size: 1em;
+      font-weight: 500;
+  }
+
+  .farkcell {
+      display: none;
+  }
+}
+
+@media (max-width:1024px) {
+
+  div.fatalerror > div {
+      background-position: 1em 1em;
+      padding: 1em 1em .1em 4em;
+  }
+  div.subpage div.ratebox {
+      font-size: 86%;
+  }
+
+  table.rows td > span {
+      margin: 0 .8em;
+  }
+}
+
+@media (max-width:999px) {
+  td#bilogo > img {
+      width: 95px;
+      height: 36px
+  }
+}
+
+@media (max-width:961px) {
+  #menubar li {
+      letter-spacing: .05em;
+  }
+
+  #newsdetail > div {
+      padding-right: 1em;
+      padding-left: 1em;
+  }
+
+  #headercontact {
+      font-size: .8em;
+  }
+
+  div.clock2 {
+      font-size: 1.1em;
+  }
+
+  div#converter {
+      float: none;
+      clear: both;
+      margin-top: 0;
+      display: inline-block;
+      border-top-right-radius: .3em;
+      border-bottom-right-radius: .3em;
+      background: #212a38;
+      border-radius: 0;
+      margin-top: 1em;
+  }
+
+  div#rightpane > div.left {
+      display: block;
+  }
+
+  div#rightpane > div.right {
+      position: relative;
+      border-top-left-radius: 0;
+      display: block;
+  }
+}
+
+@media (max-width:890px) {
+  #menubar li {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+
+  #contact {
+      font-size: .9em;
+      text-align: center;
+  }
+
+      #contact > div {
+          width: auto;
+          padding-left: 2em;
+          padding-right: 2em;
+      }
+
+  td#bilogo {
+      display: none;
+  }
+}
+
+
+@media (max-width:768px) {
+  #menubar {
+      padding-left: 8px;
+  }
+
+  div.ratebox {
+      margin: 1em 0;
+  }
+
+  table.rate tbody tr > * {
+      font-size: 100%;
+      padding: 1em 2em 1em 0;
+  }
+
+  td#bilogo {
+      display: none;
+  }
+
+  #contact > div {
+      width: auto;
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+
+  #banner img.logo {
+      width: 250px;
+      height: 71px;
+  }
+
+  #banner img.logo {
+      width: 263px;
+      height: 75px;
+      margin-top: .5em;
+      margin-bottom: .5em;
+  }
+
+  table.rows td > span {
+      padding-left: .2em;
+      padding-right: .2em;
+  }
+
+  .fleximobile {
+      padding: 0;
+  }
+
+  div.subpage {
+      padding: .4em;
+  }
+
+      div.subpage div.ratebox {
+          font-size: 100%;
+      }
+}
+
+@media (max-width:760px) {
+  #menubar {
+      display: none;
+  }
+
+  #header {
+      border-bottom: 1px solid #2e5da6;
+  }
+
+  td#mobilemenu {
+      display: table-cell;
+  }
+
+  td#dm {
+      display: none;
+  }
+
+  div#p1 > div {
+      margin: 0;
+      /* margin-top: 4em; */
+      padding-top: 400px;
+      padding-left: 1em;
+  }
+
+  span#dtsec {
+      /*display: none;*/
+  }
+
+  #dm {
+      padding: 0.1em;
+      border: none;
+  }
+}
+
+@media (max-width:720px) {
+  #menubar li {
+      padding-left: .5em;
+      padding-right: .5em;
+      letter-spacing: 0.1em;
+  }
+
+  #banner img.logo {
+      width: 250px;
+      height: 71px;
+  }
+
+
+  #headerright {
+      margin-top: 8px !important;
+  }
+
+  #dm {
+      padding: 0 .75em;
+  }
+
+  h1 {
+      font-size: 140%;
+  }
+
+  h2 {
+      font-size: 130%;
+  }
+
+  h2 {
+      font-size: 120%;
+  }
+
+  h4 {
+      font-size: 110%;
+  }
+
+  #banner img.logo {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  .tabview > .header {
+      font-size: 90%;
+  }
+
+      .tabview > .header > li {
+          padding: 1em;
+      }
+}
+
+@media (max-width:690px) {
+
+
+  #menubar li {
+      padding-left: .5em;
+      padding-right: .5em;
+      letter-spacing: 0em;
+  }
+
+  #contact > div {
+      width: auto;
+      padding-left: .5em;
+      padding-right: .5em;
+  }
+}
+
+@media (max-width:640px) {
+  /*#clock {
+      display: none;
+  }*/
+  div.clock2 {
+      font-size: 1em;
+  }
+
+  #headercontact {
+      padding-left: .4em;
+      padding-right: .4em;
+  }
+}
+
+@media (max-width:625px) {
+
+  /*#headerright {
+      font-size: 100% !important;
+      margin-top: 10px !important;
+  }*/
+
+  #banner img.logo {
+      width: 202px;
+      height: 56px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  #contact > div {
+      width: 50%;
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+      #contact > div:last-child {
+          display: none;
+      }
+
+  div.pagewrapper {
+      padding: 1em;
+  }
+}
+
+@media (max-width:600px) {
+
+  div.clock2 {
+      font-size: 1.2em;
+  }
+
+  td#dm {
+      display: table-cell;
+  }
+
+  #headercontact {
+      display: none;
+  }
+
+  #contact {
+      display: block;
+  }
+
+  #headerright {
+      font-size: 90% !important;
+      margin-top: 6px !important;
+  }
+
+  #bilogo {
+      display: none;
+  }
+
+  #mobilemenu {
+      display: table-cell;
+  }
+
+  #menubar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      max-width: unset;
+      transition: width ease-out 400ms;
+      z-index: 100;
+      overflow: hidden;
+      padding-left: 20px;
+  }
+
+      #menubar > div {
+          display: block;
+          background-color: #191d22;
+      }
+
+      #menubar li {
+          display: block;
+      }
+
+
+
+  table.rate tbody tr > * {
+      font-size: 100%;
+      padding: 1em 2em 1em 0;
+  }
+
+  #newsdetail > div {
+      padding-right: .4em;
+      padding-left: .4em;
+  }
+
+  div.caption > * {
+      display: block;
+  }
+
+  .checkboxes {
+      /*display: block !important;*/
+      padding-top: .6em;
+      overflow: hidden;
+  }
+
+  #nw {
+      padding: 1em;
+  }
+
+  div.tablewrapper > table {
+      margin: 0;
+      padding: 1em;
+  }
+
+  input, textarea, select {
+      width: 180px;
+  }
+
+  table .form {
+      font-size: 80%;
+  }
+}
+
+
+@media (max-width:530px) {
+  table.rows td > span {
+      /*padding-left:.2em;
+      padding-right:.2em;*/
+      margin-left: .8em;
+      margin-right: .8em;
+  }
+
+  table.rows tbody tr > td:last-child {
+      padding-right: .4em;
+  }
+
+  table.rows thead th:last-child {
+      padding-left: 1.2em;
+  }
+
+  .tabview > .header {
+      white-space: unset;
+  }
+
+  .options .awesomebutton {
+      padding: .4em .6em;
+      padding-left: 32px;
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-top: .4em;
+      padding-bottom: .4em;
+      background-position: 8px center;
+      padding-right: .4em;
+      border-radius: .2em;
+  }
+}
+
+@media (max-width:500px) {
+  .tabview {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+}
+
+@media (max-width:414px) {
+
+  table.rows td > span {
+      /*padding-left:.2em;
+      padding-right:.2em;*/
+      margin-left: .6em;
+      margin-right: .6em;
+  }
+
+  table.rows thead th:last-child {
+      padding-left: 1.2em;
+  }
+
+  div.header > div.options {
+      top: 2px;
+  }
+
+  .enve {
+      white-space: unset;
+      white-space: pre-line;
+      /*max-width: 110px;*/
+  }
+
+  td#clock {
+      padding-left: 0;
+  }
+
+  div.pagewrapper {
+      padding: 0;
+  }
+
+  div.pane {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+
+  .tabview {
+      padding-left: .4em;
+      padding-right: .4em;
+  }
+
+  table.cells td {
+      min-width: 100px;
+      padding: 0 .3em;
+  }
+
+  div#converter {
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+
+  div.tab table.cells {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  table.cells > tbody td {
+      padding: .4em .1em 0 .1em;
+      padding: .4em .4em 0 .4em;
+  }
+
+  div.subpage div.ratebox {
+      padding: 1em .1em;
+      /*margin: 0;*/
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 96%;
+      font-size: 86%;
+  }
+
+  table.cells {
+      /*margin: 0;*/
+  }
+
+  div.subpage {
+      padding: .1em;
+  }
+
+  div.imagetext > img {
+      height: 48px;
+      width: 48px;
+      padding: .2em;
+  }
+
+  div.imagetext > div.text {
+      margin-left: 70px;
+  }
+
+  #kurumsal > div {
+      border-width: 4px !important;
+  }
+
+      #kurumsal > div:nth-child(even) > div {
+          margin-right: 70px;
+      }
+
+  p.title {
+      margin: 0;
+  }
+
+  table#ik {
+      font-size: 80%;
+  }
+
+  div.checkboxes > span {
+      margin-right: .1em;
+  }
+
+  div.header > h1 {
+      left: .4em;
+  }
+
+  .onoffswitch-label:before {
+      width: 12px;
+  }
+
+  .onoffswitch-label {
+      height: 12px;
+  }
+
+      .onoffswitch-label:before {
+          right: 16px;
+      }
+
+  .onoffswitch {
+      width: 32px;
+  }
+}
+
+@media (max-width:410px) {
+
+  #banner img.logo {
+      width: 160px;
+      height: 46px;
+      width: 186px;
+      height: 56px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  div#headerright {
+      font-size: 80% !important;
+      margin-top: 4px !important;
+      margin-right: 2px;
+  }
+
+  #contact > div:nth-child(4), #contact > div:nth-child(5) {
+      display: none;
+  }
+
+  div.header > div.options {
+      top: 0;
+      margin: 0;
+  }
+
+  div.responsivewrapper {
+      display: block;
+  }
+
+  input, textarea, select {
+      width: 120px;
+  }
+}
+
+@media (max-width:410px) {
+  section, div.ratebox {
+      font-size: 94%;
+      margin-top: 0;
+  }
+
+  h1 {
+      font-size: 120%;
+  }
+
+  h2 {
+      font-size: 115%;
+  }
+
+  h2 {
+      font-size: 110%;
+  }
+
+  h4 {
+      font-size: 105%;
+  }
+}
+
+@media (max-width:375px) {
+  div#page {
+      font-size: 90%;
+  }
+
+  img#mmicon {
+      width: 27px;
+      height: 18px;
+  }
+
+  /*#mmlabel {
+      font-size: .8em;
+      margin-top: 2px;
+  }*/
+
+  table.rows tbody tr > th {
+      padding-left: .4em;
+      max-width: 110px;
+  }
+
+  table.cells > tbody td {
+      padding-left: .2em;
+      padding-right: .2em;
+  }
+
+  table.rows {
+      margin-top: 2em;
+  }
+  #banner img.logo {
+      width: 176px;
+      height: 52px;
+  }
+}
+
+
+@media (max-width:359px) {
+  body {
+      font-size: 90%;
+  }
+
+  .fleximobile {
+      padding-left: .2em;
+      padding-right: .2em;
+  }
+
+  img#mmicon {
+      width: 23px;
+      height: 15px;
+  }
+
+  #mmlabel {
+      font-size: .4em;
+      margin-top: 0;
+  }
+
+  div.clock2 {
+      font-size: 1.2em;
+  }
+
+  table.rows tbody tr > th {
+      padding-left: .1em;
+  }
+}
+
+@media (max-width:349px) {
+  td#clock {
+      display: none;
+  }
+}

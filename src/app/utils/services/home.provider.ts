@@ -19,7 +19,6 @@ export class HomeProvider {
     this.connection = webSocket(servers.real);
     return this.connection;
   }
-
   public connectWebSocket(): Observable<SocketData[]> {
     return new Observable<SocketData[]>(observer => {
       this.connection

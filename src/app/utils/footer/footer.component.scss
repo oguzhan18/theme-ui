@@ -776,15 +776,11 @@ span.env {
   transition: background ease-in 500ms;
 }
 span.up {
-
-  color: white;
   background-color: #13503B;
   background-color: #197D5B;
 }
 
 span.down {
-
-  color: white;
   background-color: #5B2036;
   background-color: #7B2645;
   background-color: #460E23;
@@ -814,11 +810,11 @@ table.s1 td.up>span {
   background-color: lightblue;
 }
 .up {
-  background-color: #2c572c;
+  /*background-color: #2c572c;*/
 }
 
 .down {
-  background-color: #9d3746;
+  /*background-color: #9d3746;*/
 }
 
 .close {
@@ -2504,6 +2500,24 @@ table.news td>div {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 table {
   border-collapse: collapse;
   margin: 0;
@@ -2563,7 +2577,6 @@ table th {
     display: block;
     font-size: .8em;
     text-align: center;
-    font-size: 20px;
   }
 
   table td::before {
@@ -2580,13 +2593,4 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
-}
-.up{
-  background-color: #006400;
-  color: white;
-
-}
-.down{
-  background-color:#330000;
-  color: white;
 }

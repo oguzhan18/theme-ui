@@ -2,7 +2,7 @@
   <div class="subpage" style="padding: 0;">
     <div class="fleximobile">
 
-      <div class="ratebox fx">
+      <div class="ratebox fx" style="width: 40em;">
         <div class="header">
           <img src="../../../assets/images/icon/currency-calc.png" class="header-logo" alt="">
           <h1 class="imgtitle altin">Döviz</h1>
@@ -10,24 +10,27 @@
             <span class="awesomebutton list "></span>
           </div>
         </div>
-        <table class="rows bodyscroll" id="rows_Fx_table2">
-          <thead>
-            <tr>
-              <th style="width: 8em;">Sembol</th>
-              <th style="width: 145px;">Alış</th>
-              <th style="width: 8em;">Satış</th>
-            </tr>
-          </thead>
-          <tbody style="height: 513px;">
-            <tr class="up" data-sik="XAU/USD">
-              <th><span class="env XAU/USD">XAU/USD</span><span class="enve">Altın Ons (USD)</span></th>
-              <td class="rate"><span data-f="B" class="">1.738,90</span></td>
-              <td class="rate"><span data-f="S" class="">1.739,22</span></td>
-            </tr>
-          </tbody>
-        </table>
+        <div style="overflow:scroll; height: 30em;">
+          <table style="width: 35em;">
+            <thead class="sticky-top" style="background-color:rgb(58, 58, 58);  color: white;">
+              <tr>
+                <th scope="col">Sembol </th>
+                <th scope="col">Alış</th>
+                <th scope="col">Satış</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let socketData of currencyList;" >
+              <tr [ngClass]="{'up': socketData.askPercentChange > 0,
+                'down': socketData.askPercentChange < 0}">
+                <td> <span > {{socketData.Code}} </span> </td>
+                <td> <span > {{socketData.Ask}}  </span> </td>
+                <td> <span > {{socketData.Bid}}  </span>  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="ratebox ">
+      <div class="ratebox fx" style="width: 40em;">
         <div class="header">
           <img src="../../../assets/images/icon/gold.png" class="header-logo" alt="">
           <h1 class="imgtitle altin">Altın</h1>
@@ -35,49 +38,42 @@
             <span class="awesomebutton list "></span>
           </div>
         </div>
-        <table class="rows bodyscroll" id="rows_Fx_table2">
-          <thead>
-            <tr>
-              <th style="width: 8em;">Sembol</th>
-              <th style="width: 145px;">Alış</th>
-              <th style="width: 8em;">Satış</th>
-            </tr>
-          </thead>
-          <tbody style="height: 513px;">
-            <tr class="up" data-sik="XAU/USD">
-              <th><span class="env XAU/USD">XAU/USD</span><span class="enve">Altın Ons (USD)</span></th>
-              <td class="rate"><span data-f="B" class="">1.738,90</span></td>
-              <td class="rate"><span data-f="S" class="">1.739,22</span></td>
-            </tr>
-          </tbody>
-        </table>
+        <div style="overflow:scroll; height: 30em;">
+          <table style="width: 35em;">
+            <thead class="sticky-top" style="background-color:rgb(58, 58, 58); color: white;">
+              <tr>
+                <th scope="col">Sembol </th>
+                <th scope="col">Alış</th>
+                <th scope="col">Satış</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let socketData of ziynetList;" >
+              <tr [ngClass]="{'up': socketData.askPercentChange > 0,
+                'down': socketData.askPercentChange < 0}">
+                <td> <span > {{socketData.Code}} </span> </td>
+                <td> <span > {{socketData.Ask}}  </span> </td>
+                <td> <span > {{socketData.Bid}}  </span>  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-
-
-
-      <div id="mobilead" style="min-height: 743px;">
-
+      <div id="mobilead" style="min-height: 500px;">
         <img src="../../../assets/images/utils-assest-image/mobile-and-tablet-apps.png"
           style="width: 580px; height: 235px; max-width: 100%; height: auto;">
-
         <h1>Mobil uygulamalarımız ile her daim alarmda kalın</h1>
-
         <p>
           Hakan Döviz mobil uygulamalarımız ile favori döviz cinsleriniz için kur alarmları oluşturabilir
           ve hedeflediğiniz kura ulaşıldığında
           mobil bildirimler alabilirsiniz.
         </p>
-
         <h1>Anlık piyasa takibi</h1>
-
         <p>
           Hem mobil uygulamalarımız hem de web sitemiz üzerinden güncel kur bilgilerine anlık olarak
           erişebilir ve canlı veri sayfalarımızı takip edebilirsiniz.
         </p>
-
         <h1>Ücretsiz indirin</h1>
-
         <p>
           Tüm mobil ve tablet uygulamalarımızı ilgili market üzerinden ücretsiz olarak indirilebilir ve
           kullanabilirsiniz.
@@ -89,67 +85,39 @@
           <a href="#">
             <img src="../../../assets/images/utils-assest-image/app-store.svg" style="width: 174px; height: 46px; "></a>
         </div>
-
       </div>
-
     </div>
-
-    <div id="nw">
-
+    <div id="nw" style="margin-top: 6.4em;">
       <section id="news">
-
         <div class="caption">
-
           <h1 class="imgtitle haber">Ekonomik Takvim</h1>
-
-
         </div>
-
         <div id="newswrapper">
-
           <div id="allnews" class="scroll">
-
             <div>
               <table class="news">
-                <thead>
+                <thead class="sticky-top">
                   <tr>
-                    <th>Zaman</th>
-                    <th>Önemi</th>
-                    <th>Konu</th>
-                    <th>Açıklanan</th>
-                    <th>Beklenti</th>
-                    <th>Önceki</th>
+                    <th>KATEGORİ</th>
+                    <th>KAYNAK</th>
+                    <th>ZAMAN</th>
+                    <th></th>
+                    <th>BAŞLIK</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr style="display:none;">
-                    <td>[0] T </td>
-                    <td>[1] eventRowId_456466</td>
-                    <td>[2] </td>
-                    <td>[3] 2022/08/29 04:30+00</td>
-                    <td>[4] </td>
-                    <td>[5] null</td>
-                    <td>[6] </td>
-                    <td>[7] Yüksek Volatilite Beklentisi</td>
-                    <td>[8] </td>
-                    <td>[9] bull3</td>
-                    <td>[10] </td>
-                    <td>[11] /economic-calendar/retail-sales-262</td>
-                    <td>[12] </td>
-                    <td>[13] Perakende Satışlar (Aylık) (Tem)</td>
-                    <td>[14] </td>
-                    <td>[15] &nbsp;</td>
-                    <td>[16] </td>
-                    <td>[17] 0,3%</td>
-                    <td>[18] </td>
-                    <td>[19] 0,2%</td>
-                    <td>[20] </td>
+
+                  <tr *ngFor="let news of technewsDisplay;">
+                    <th>EKONOMİ</th>
+                    <th>{{news.source.name}}</th>
+                    <th>{{news.publishedAt | date}}</th>
+                    <th>{{news.title}}</th>
                   </tr>
 
                 </tbody>
               </table>
             </div>
-
           </div>
 
           <div id="newsdetail">
@@ -163,21 +131,14 @@
                 .
               </div>
             </div>
-
           </div>
-
         </div>
-
-
       </section>
     </div>
-
   </div>
 
   <div id="p1">
-
     <img src="../../../assets/images/utils-assest-image/dovizpane.png">
-
     <div>
       <div>
         <h3>İşinizi yaparken vakit kaybetmeyin.</h3>
@@ -196,58 +157,5 @@
         </p>
       </div>
     </div>
-
-  </div>
-
-
-
-</div>
-
-<div id="footer" style="margin-top: 0px;">
-
-  <img class="logo" src="../../../assets/images/logos/lightlogo.png" alt="Hakan Döviz Yetkili Müessese A.Ş."
-    title="Hakan Döviz Yetkili Müessese A.Ş." style="margin-top: -.3em; ">
-
-  <div style="margin-top: -.4em;">
-    <table>
-      <tbody>
-        <tr>
-          <td>
-            <ul>
-              <li><a href="#">Ana sayfa</a></li>
-              <li><a href="#">Canlı veriler</a></li>
-              <li><a href="#">Kurumsal</a></li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="#">İnsan Kaynakları</a> </li>
-              <li><a href="#">İletişim</a></li>
-              <li><a href="#">Sorumluluk ve Uyum</a></li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-  </div>
-
-  <div id="mobileapps">
-    <a href="#">
-      <img src="../../../assets/images/utils-assest-image/google-play.png" style="width: 181px; height: 70px;"></a>
-    <a href="#">
-      <img src="../../../assets/images/utils-assest-image/app-store.svg"
-        style="width: 174px; height: 100px; padding: 12px 0;">
-    </a>
-  </div>
-
-  <div class="disclaimer">
-
-    <strong style="color: unset;">Yasal uyarı:</strong> Hakan Döviz Yetkili Müessese A.Ş. resmi internet sitesi üzerinde
-    sunulan tüm bilgiler (anlık kur bilgileri, piyasa haberleri vb.) yalnızca bilgilendirme amaçlı olup hiç bir yatırım
-    önerisi teşkil etmemektedir ve yatırım danışmanlığı kapsamında değillerdir. Elektronik ortam üzerinden her türlü
-    canlı verinin iletilmesi sırasında yaşanabilecek teknik aksaklıklardan Hakan Yetkili Müessese A.Ş. sorumlu
-    tutulamaz.<br>
-    Yasal uyarı metninin tamamını okumak için <a href="#">buraya</a> tıklayınız.
   </div>
 </div>
