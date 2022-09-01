@@ -31,6 +31,8 @@ import { AllPricePagesComponent } from './pages/live-price-pages/all-price-pages
 import { CurrencyParityComponent } from './pages/live-price-pages/currency-parity/currency-parity.component';
 import { GoldComponent } from './pages/live-price-pages/gold/gold.component';
 import { BistComponent } from './pages/live-price-pages/bist/bist.component';
+import { PriceCalculatorComponent } from './component/price-calculator/price-calculator.component';
+import { OutStoresComponent } from './pages/out-stores/out-stores.component';
 
 registerLocaleData(localeTr, 'tr-TR', localeTrExtra);
 
@@ -50,26 +52,22 @@ registerLocaleData(localeTr, 'tr-TR', localeTrExtra);
     CurrencyParityComponent,
     GoldComponent,
     BistComponent,
+    PriceCalculatorComponent,
+    OutStoresComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    // ClientModule,
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-
-
     MatIconModule,
-
-
     MatToolbarModule,
     MatSlideToggleModule,
     MatSidenavModule,
     MatDialogModule,
-    MatButtonModule,
-    // NgbModule
+    MatButtonModule
   ],
 
   providers: [ThemeService, HomeProvider],

@@ -1,1 +1,69 @@
-<p>currency-parity works!</p>
+<div id="page" class="noflag">
+  <div class="subpage" style="padding: 0;">
+    <div class="fleximobile">
+
+      <div class="ratebox fx" style="width: 40em;">
+        <div class="header">
+          <img src="../../../../assets/images/icon/currency-calc.png" class="header-logo" alt="">
+          <h1 class="imgtitle altin">Döviz</h1>
+          <div class="options">
+            <span class="awesomebutton list "></span>
+          </div>
+        </div>
+        <div style="overflow:scroll; height: 30em;">
+          <table style="width: 35em;">
+            <thead class="sticky" style="background-color:rgb(58, 58, 58);  color: white;">
+              <tr>
+                <th scope="col">Sembol </th>
+                <th scope="col">Alış</th>
+                <th scope="col">Satış</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let socketData of currencyList;" >
+              <tr [ngClass]="{'up': socketData.askPercentChange > 0,
+                'down': socketData.askPercentChange < 0}">
+                <td> <span > {{socketData.Code}} </span> </td>
+                <td> <span > {{socketData.Ask}}  </span> </td>
+                <td> <span > {{socketData.Bid}}  </span>  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="ratebox fx" style="width: 40em;">
+        <div class="header">
+          <img src="../../../../assets/images/icon/parite.png" class="header-logo" alt="">
+          <h1 class="imgtitle altin">Pariteler</h1>
+          <div class="options">
+            <span class="awesomebutton list "></span>
+          </div>
+        </div>
+        <div style="overflow:scroll; height: 30em;">
+          <table style="width: 35em;">
+            <thead class="sticky" style="background-color:rgb(58, 58, 58); color: white;">
+              <tr>
+                <th scope="col">Sembol </th>
+                <th scope="col">Alış</th>
+                <th scope="col">Satış</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let socketData of ziynetList;" >
+              <tr [ngClass]="{'up': socketData.askPercentChange > 0,
+                'down': socketData.askPercentChange < 0}">
+                <td> <span > {{socketData.Code}} </span> </td>
+                <td> <span > {{socketData.Ask}}  </span> </td>
+                <td> <span > {{socketData.Bid}}  </span>  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+</div>

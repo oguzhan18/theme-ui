@@ -1,0 +1,33 @@
+<div class="section">
+  <div class="container">
+    <div class="row full-height justify-content-center">
+      <div class="card-3d-wrap mx-auto">
+        <div class="card-front">
+          <div class="center-wrap">
+            <div class="section text-center">
+              <h1 class="mb-14 pb-1"> AS YILDIZ KALİTESİ İLE HIZLICA FİYATLARINIZI HESAPLAYIN </h1>
+              <div>
+                <div class="form-group mb-2">
+                  <input type="text" name="logemail" class="form-style" placeholder="Miktar" id="logemail"
+                    autocomplete="off" type="text" class="form-control" aria-label="amount" [(ngModel)]="miktar">
+
+                </div>
+                <div class="form-group mb-2">
+                  <select class="selectpicker form-control" id="select1" [(ngModel)]="myDropDown"
+                    (ngModelChange)="onChangeofOptions($event)">
+                    <option *ngFor="let data of footerList" value="{{  data.Ask}}">{{data.Code}}</option>
+                  </select>
+                </div>
+                <div class="form-group mt-2">
+                  <input type="text" class="form-control" type="text" value="{{sonuc}}" name="logpass"
+                    placeholder="Sonuç" id="logpass" autocomplete="off" disabled>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

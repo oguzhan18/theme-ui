@@ -1,6 +1,10 @@
 <div id="footer" style="margin-top: 0px;">
-  <img class="logo" src="../../../assets/images/logos/lightlogo.png" alt="Hakan Döviz Yetkili Müessese A.Ş."
-    title="Hakan Döviz Yetkili Müessese A.Ş." style="margin-top: -.3em; ">
+  <td>
+    <img class="logo" src="../../../../assets/images/logos/lightlogo.png"
+      title="ASYILDIZ Yetkili Müessese A.Ş." *ngIf="this.isDarkMode == false">
+    <img class="logo" src="../../../../assets/images/logos/darklogo.png"
+      title="ASYILDIZ Yetkili Müessese A.Ş." *ngIf="this.isDarkMode == true">
+  </td>
   <div style="margin-top: -.4em;">
     <table>
       <tbody>

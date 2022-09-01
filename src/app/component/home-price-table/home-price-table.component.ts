@@ -53,7 +53,7 @@ export class HomePriceTableComponent implements OnInit {
   constructor(private renderer: Renderer2, private wsService: HomeProvider,private _services:NewsapiService) {}
 
   ngOnInit() {
-    console.log(this.selectItems);
+    // console.log(this.selectItems);
 
     this.interval = setInterval(() => {
       if (this.pingStatus === false) {
@@ -67,7 +67,7 @@ export class HomePriceTableComponent implements OnInit {
     this._services.techNews().subscribe((result)=>{
 
       this.technewsDisplay = result.articles;
-      console.log(result);
+      // console.log(result);
     });
   }
 

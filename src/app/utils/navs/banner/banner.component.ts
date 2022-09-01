@@ -5,7 +5,8 @@ import { ThemeService } from '../../services/theme.service';
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.scss']
+  styleUrls: ['./banner.component.scss'],
+  providers: [ ThemeService ],
 })
 export class BannerComponent implements OnInit {
   public now: Date = new Date();
@@ -22,7 +23,7 @@ export class BannerComponent implements OnInit {
     }, 1);
   }
 
-  ngOnInit(): void {}
+  ngOnInit(){}
 
   toggleDarkMode(): void {
     this.isDarkMode = this.themeService.isDarkMode();
@@ -30,4 +31,6 @@ export class BannerComponent implements OnInit {
     console.log(this.isDarkMode);
 
   }
+
+
 }
