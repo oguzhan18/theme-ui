@@ -27,6 +27,10 @@ import { HomeProvider } from './utils/services/home.provider';
 import { NewToolComponent } from './component/new-tool/new-tool.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './utils/footer/footer.component';
+import { AllPricePagesComponent } from './pages/live-price-pages/all-price-pages/all-price-pages.component';
+import { CurrencyParityComponent } from './pages/live-price-pages/currency-parity/currency-parity.component';
+import { GoldComponent } from './pages/live-price-pages/gold/gold.component';
+import { BistComponent } from './pages/live-price-pages/bist/bist.component';
 
 registerLocaleData(localeTr, 'tr-TR', localeTrExtra);
 
@@ -42,6 +46,10 @@ registerLocaleData(localeTr, 'tr-TR', localeTrExtra);
     ContactComponent,
     NewToolComponent,
     FooterComponent,
+    AllPricePagesComponent,
+    CurrencyParityComponent,
+    GoldComponent,
+    BistComponent,
   ],
   imports: [
     BrowserModule,
