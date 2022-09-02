@@ -11,10 +11,15 @@ export class NavbarComponent implements OnInit {
   isDarkMode!: boolean;
   title = 'asyildiz';
   showFiller = false;
-
   constructor(private themeService: ThemeService) {
     this.themeService.initTheme();
     this.isDarkMode = this.themeService.isDarkMode();
+  }
+
+  isCollapsed = false;
+
+  toggleNavbar() {
+    this.isCollapsed = !this.isCollapsed;
   }
 
   ngOnInit(): void {}
