@@ -74,3 +74,4 @@ registerLocaleData(localeTr, 'tr-TR', localeTrExtra);
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
