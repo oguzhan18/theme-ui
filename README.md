@@ -26,7 +26,7 @@ Use it as you want
 <img src="src/assets/media/2.png">
 <img src="src/assets/media/3.png">
 <img src="src/assets/media/1-5.png">
-<img src="src/assets/media/4.png 
+<img src="src/assets/media/4.png">
 
 
 
