@@ -22,10 +22,10 @@ Use it as you want
 - Dark-Light Mode
  
 ## Screenshots
-<img src="src/assets/media/1-5.png">
 <img src="src/assets/media/1.png">
 <img src="src/assets/media/2.png">
 <img src="src/assets/media/3.png">
+<img src="src/assets/media/1-5.png">
 <img src="src/assets/media/4.png 
 
 
